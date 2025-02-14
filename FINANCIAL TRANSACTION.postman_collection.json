@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "83b09c9e-78f4-4f16-bd75-cc53e59dcbc4",
+		"name": "FINANCIAL TRANSACTION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22795215"
+	},
+	"item": [
+		{
+			"name": "get transaction details using offset and limit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2626/api/v1/transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2626",
+					"path": [
+						"api",
+						"v1",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
