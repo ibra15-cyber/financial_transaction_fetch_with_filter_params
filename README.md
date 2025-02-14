@@ -83,7 +83,7 @@ page: Page number (0-based)
 size: Number of records per page
 
 Count Transactions with Filters
-CopyGET /api/v1/transactions/?dateFrom=2024-01-01&dateTo=2024-12-31&userId=user123&service=Subscription&status=Completed&reference=SUB-2024-01
+CopyGET /api/v1/transactions?dateFrom=2024-01-01&dateTo=2024-12-31&userId=user123&service=Subscription&status=Completed&reference=SUB-2024-01
 
 Parameters: Same as above, excluding pagination.
 Key Implementation Details
