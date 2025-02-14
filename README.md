@@ -1,4 +1,5 @@
 Financial Transaction Tracking Service 
+
 A reactive Spring Boot application for tracking and managing financial transactions using Spring WebFlux and R2DBC.
 
 
@@ -8,17 +9,24 @@ Features
 
 Store and retrieve financial transaction records
 Filter transactions by date range, user, service type, status, and reference
+
 Pagination support for large result sets
+
 Reactive endpoints with non-blocking I/O
+
 PostgreSQL database with R2DBC for reactive data access
 
 Technology Stack
 
 Spring Boot 3.4
+
 Spring WebFlux for reactive REST endpoints
+
 Spring Data R2DBC for reactive database access
+
 PostgreSQL as the database
 R2DBC PostgreSQL driver
+
 Project Lombok for reducing boilerplate code
 
 Database Schema
@@ -43,7 +51,9 @@ Setup and Configuration
 Prerequisites
 
 JDK 23
+
 PostgreSQL 17
+
 Maven or Gradle
 
 Configuration
@@ -56,16 +66,25 @@ spring.sql.init.mode=always
 
 
 dateFrom: Filter transactions from this date (inclusive)
+
 dateTo: Filter transactions until this date (inclusive)
+
 userId: Filter by user ID
+
 service: Filter by service type
-status: Filter by transaction status
+
+status: Filter by transaction 
+status
+
 reference: Filter by reference code
+
 page: Page number (0-based)
+
 size: Number of records per page
 
 Count Transactions with Filters
-CopyGET /api/transactions/count?dateFrom=2024-01-01&dateTo=2024-12-31&userId=user123&service=Subscription&status=Completed&reference=SUB-2024-01
+CopyGET /api/v1/transactions/?dateFrom=2024-01-01&dateTo=2024-12-31&userId=user123&service=Subscription&status=Completed&reference=SUB-2024-01
+
 Parameters: Same as above, excluding pagination.
 Key Implementation Details
 Dynamic Query Building
